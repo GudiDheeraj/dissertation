@@ -1,0 +1,235 @@
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('vv.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  min-height: 100vh; /* Ensure body fills at least the viewport height */
+  display: flex;
+  flex-direction: column; /* Flexbox for aligning items within body */
+}
+/* Style for the footer */
+footer {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.github-link {
+  font-family: 'Lato', sans-serif;
+  color: #fff; /* Changed to white */
+}
+
+.github-link p {
+  margin: 0;
+  font-size: 16px;
+  color: #fff; /* Changed to white */
+}
+
+.github-button {
+  display: block; /* Changed to block for full width */
+  margin: 10px auto 0; /* Center align button horizontally with auto margin */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff; /* Button text color remains white */
+  background-color: #FFA500; /* Orange background for button */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Center align text inside the button */
+}
+
+.github-button:hover {
+  background-color: #FF8C00; /* Darker orange for hover effect */
+}
+
+/* Flex-grow added to .container */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 1200px; /* Maximum width to avoid stretching on larger screens */
+  margin: 20px auto;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  flex-grow: 1; /* Allow the container to grow and fill the available height */
+}
+
+.graph-section {
+  flex: 1 1 65%;
+  margin-right: 20px;
+}
+
+/* Flex-grow added to .container */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 1200px; /* Maximum width to avoid stretching on larger screens */
+  margin: 20px auto;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  flex-grow: 1; /* Allow the container to grow and fill the available height */
+}
+
+.graph-section {
+  flex: 1 1 65%;
+  margin-right: 20px;
+}
+
+.calculation-section {
+  flex: 1 1 30%;
+  background: rgba(0, 0, 0, 0.5) url('main.jpg') no-repeat center center;
+  background-size: cover; /* Ensure the image covers the entire element */
+  padding: 20px;
+  border-radius: 8px;
+  color: orange;
+  font-size: 1.2em; /* Increase the font size */
+  font-weight: bold; /* Make the font bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* 3D text shadow effect */
+
+  /* 3D Effect for the section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: perspective(1000px) rotateX(3deg) rotateY(3deg);
+
+  /* Optional: Add transition for smooth effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Optional: Hover effect to enhance 3D appearance */
+.calculation-section:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6), 0 16px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* Chart Wrapper */
+.chart-wrapper {
+  width: 95%;
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box; /* Ensure padding and borders are included in the element's width and height */
+  height: 80%; /* Ensure the chart wrapper fills the available height */
+  min-height: 300px; /* Ensure a minimum height */
+}
+.chart-wrapper:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6), 0 16px 32px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Flex added to body, .page-header and .chart-wrapper for alignment */
+.page-header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.page-header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.header label {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.header select {
+  font-size: 1em;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  margin: 0 10px;
+  flex: 1;
+}
+
+#input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#input-container > div {
+  flex: 1 1 45%;
+}
+
+input[type="number"] {
+  width: 90%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: rgb(255, 165, 0);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 40px;
+  outline: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: rgb(255, 140, 0);
+  transform: translateY(-2px);
+}
+
+/* Change the color to blue when the button is pressed or focused */
+button:active,
+button:focus {
+  background: #8B4000;
+  color: white;
+  transform: translateY(0); /* Optional: Reset transform to avoid "stuck" effect */
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.result p {
+  font-size: 16px;
+  color: #333;
+}
